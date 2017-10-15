@@ -7,6 +7,7 @@ Stack.prototype.push = function(item) {
 }
 
 Stack.prototype.pop = function() {
+  if (this.isEmpty()) return null;
   return this._stack.pop();
 }
 
@@ -33,3 +34,7 @@ console.log(stack.peek());
 stack.push(6);
 console.log(stack.peek());
 console.log(stack.size());
+
+console.log(stack.pop());
+console.log(stack.pop());
+console.log(stack.pop());

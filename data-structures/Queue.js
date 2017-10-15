@@ -7,6 +7,7 @@ Queue.prototype.enqueue = function(item) {
 }
 
 Queue.prototype.dequeue = function() {
+  if (this.isEmpty()) return null;
   return this._queue.shift();
 }
 
