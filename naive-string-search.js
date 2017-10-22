@@ -2,6 +2,7 @@ function String(str) {
   this.str = str;
 }
 // Naive String Search
+// O(n*m)
 String.prototype.indexOf = function(pattern) {
   const str = this.str;
   if (pattern.length > str.length) return -1;

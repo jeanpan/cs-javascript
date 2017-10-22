@@ -3,6 +3,7 @@ function String(str) {
 }
 
 // Boyer-Moore String Search
+// O(n/m)
 String.prototype.indexOf = function(pattern) {
   const str = this.str;
   const strLength = str.length;
